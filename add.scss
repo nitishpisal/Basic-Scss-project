@@ -1,0 +1,259 @@
+@import "compass";
+
+
+body{
+background-color: #FAFAFA;
+
+}
+#banner{
+clear:both;
+padding-top:0;
+text-align: left;
+height: 0;
+  width: 370px;
+  margin-bottom: 50;
+  text-shadow: 2px 2px BLUE;
+  background: PINK;
+  position: relative;
+  -webkit-animation: mymove 9s infinite;
+  -webkit-animation-delay: 1s;
+  animation: mymove 1s infinite;
+  animation-delay: 1s;
+}
+@-webkit-keyframes mymove {
+
+  from {
+    left: -800px;
+  }
+  to {
+    left: 900px;
+  }
+}
+
+@keyframes mymove {
+
+  from {
+    left: -800px;
+  }
+  to {
+    left: 900px;
+  }
+}
+
+
+#imagelogo{
+float:left;
+}
+
+#nav a:hover{
+background-color:#585858;
+
+}
+#nav .selected{
+font-weight: bold;
+width:100%;
+}
+
+
+#nav{
+float: left;
+background-color: #BDBDBD;
+width: 200px;
+display:block;
+}
+
+h1,h2,h3{
+clear:both;
+margin: 0;
+}
+#spinner{
+font-size:40px;
+}
+
+
+
+a{
+color:WHITE;
+text-decoration: none;
+}
+#nav ul{
+list-style-type: none;
+text-color: WHITE;
+line-height: 30px;
+
+}
+
+#content{
+clear:both;
+}
+
+#container{
+float:right;
+padding-left:100px;
+padding-right:100px;
+margin-top:10px;
+margin-left:auto;
+margin-right: auto;
+}
+
+#imagehead{
+float: right;
+}
+
+#main{
+line-height: 200%;
+font-size: 17px;
+padding-left: 50px;
+font-family: "Times New Roman",Georgia,Serif;
+}
+
+.image1{
+float:left;
+padding-left:50px;
+}
+
+
+.back{
+clear:both;}
+
+.image1 .front{
+ position: inherit;
+  width:30%;
+  border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s; }
+
+  .image1 .back{
+   position: inherit;
+  border-radius: 5px;
+  background: #DCDCDC;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  }
+
+.image1:hover .front{
+-webkit-transform:  rotateY(-180deg);
+  transform:  rotateY(-180deg);
+  box-shadow: -5px 5px 5px BLACK;
+  clear:both;
+  }
+
+  .image1:hover .back{
+  -webkit-transform:  rotateY(0deg);
+  transform:  rotateY(0deg);
+  margin-top:-400px;
+    }
+
+  #footer{
+   background: #cccccc;
+  position:fixed;
+  bottom:10px;
+  text-align:center;
+  clear: both;
+  margin-top: 24 px;
+  }
+  #footer:hover{
+  background: #cccccc;
+  opacity: 1;}
+
+
+    @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+
+  @keyframes spinner1 {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+
+ #stage1 {
+ clear:both;
+
+	height:60px;
+
+    margin: 1em auto;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+  }
+#spinner {
+clear:both;
+
+	height:50px;
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #spinner1:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  @-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+#stage1 {
+
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+}
+
+#spinner1 {
+padding-left:150px;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+
+}
+#spinner1:hover {
+  -webkit-animation-play-state: paused;
+}
+
+#spinner1 img {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+
+}
+#nav .ul {
+  width:100%;
+  line-height:30px;
+}

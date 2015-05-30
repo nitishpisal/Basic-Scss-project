@@ -1,0 +1,277 @@
+/* line 4, add.scss */
+body {
+  background-color: #FAFAFA;
+}
+
+/* line 8, add.scss */
+#banner {
+  clear: both;
+  padding-top: 0;
+  text-align: left;
+  height: 0;
+  width: 370px;
+  margin-bottom: 50;
+  text-shadow: 2px 2px BLUE;
+  background: PINK;
+  position: relative;
+  -webkit-animation: mymove 9s infinite;
+  -webkit-animation-delay: 1s;
+  animation: mymove 1s infinite;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 900px;
+  }
+}
+@keyframes mymove {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 900px;
+  }
+}
+/* line 44, add.scss */
+#imagelogo {
+  float: left;
+}
+
+/* line 48, add.scss */
+#nav a:hover {
+  background-color: #585858;
+}
+
+/* line 52, add.scss */
+#nav .selected {
+  font-weight: bold;
+  width: 100%;
+}
+
+/* line 58, add.scss */
+#nav {
+  float: left;
+  background-color: #BDBDBD;
+  width: 200px;
+  display: block;
+}
+
+/* line 65, add.scss */
+h1, h2, h3 {
+  clear: both;
+  margin: 0;
+}
+
+/* line 69, add.scss */
+#spinner {
+  font-size: 40px;
+}
+
+/* line 75, add.scss */
+a {
+  color: WHITE;
+  text-decoration: none;
+}
+
+/* line 79, add.scss */
+#nav ul {
+  list-style-type: none;
+  text-color: WHITE;
+  line-height: 30px;
+}
+
+/* line 86, add.scss */
+#content {
+  clear: both;
+}
+
+/* line 90, add.scss */
+#container {
+  float: right;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 99, add.scss */
+#imagehead {
+  float: right;
+}
+
+/* line 103, add.scss */
+#main {
+  line-height: 200%;
+  font-size: 17px;
+  padding-left: 50px;
+  font-family: "Times New Roman",Georgia,Serif;
+}
+
+/* line 110, add.scss */
+.image1 {
+  float: left;
+  padding-left: 50px;
+}
+
+/* line 116, add.scss */
+.back {
+  clear: both;
+}
+
+/* line 119, add.scss */
+.image1 .front {
+  position: inherit;
+  width: 30%;
+  border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+
+/* line 128, add.scss */
+.image1 .back {
+  position: inherit;
+  border-radius: 5px;
+  background: #DCDCDC;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+/* line 140, add.scss */
+.image1:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  box-shadow: -5px 5px 5px BLACK;
+  clear: both;
+}
+
+/* line 147, add.scss */
+.image1:hover .back {
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  margin-top: -400px;
+}
+
+/* line 153, add.scss */
+#footer {
+  background: #cccccc;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  clear: both;
+  margin-top: 24 px;
+}
+
+/* line 161, add.scss */
+#footer:hover {
+  background: #cccccc;
+  opacity: 1;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+@keyframes spinner1 {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+/* line 185, add.scss */
+#stage1 {
+  clear: both;
+  height: 60px;
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
+
+/* line 196, add.scss */
+#spinner {
+  clear: both;
+  height: 50px;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 216, add.scss */
+#spinner1:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+/* line 230, add.scss */
+#stage1 {
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+}
+
+/* line 236, add.scss */
+#spinner1 {
+  padding-left: 150px;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* line 245, add.scss */
+#spinner1:hover {
+  -webkit-animation-play-state: paused;
+}
+
+/* line 249, add.scss */
+#spinner1 img {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* line 256, add.scss */
+#nav .ul {
+  width: 100%;
+  line-height: 30px;
+}
